@@ -67,7 +67,7 @@ Recommended: Python 3.12+ on Apple Silicon. The bundled macOS arm64 MediaPipe 0.
 ### macOS / Linux
 
 ```bash
-cd HandPilot
+cd HandPilot.2.1.0-2
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
@@ -80,7 +80,7 @@ python main.py
 ### Windows PowerShell
 
 ```powershell
-cd HandPilot
+cd HandPilot.2.1.0-2
 py -3.13 -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
