@@ -1,0 +1,121 @@
+{
+  "camera": {
+    "index": 0,
+    "width": 960,
+    "height": 540,
+    "fps": 30,
+    "mirror": true
+  },
+  "screen": {
+    "width": 1920,
+    "height": 1080
+  },
+  "tracking": {
+    "num_hands": 2,
+    "detection_confidence": 0.55,
+    "presence_confidence": 0.55,
+    "tracking_confidence": 0.55,
+    "smoothing_alpha": 0.45,
+    "gesture_min_confidence": 0.62,
+    "activation_delay_ms": 150,
+    "release_delay_ms": 100,
+    "lost_hand_grace_ms": 180
+  },
+  "face_guard": {
+    "enabled": true,
+    "detection_confidence": 0.55,
+    "suppression_threshold": 0.3,
+    "detection_interval_frames": 2,
+    "hold_ms": 500,
+    "bbox_expand": 0.2,
+    "point_overlap_fraction": 0.12,
+    "show_face_box": true
+  },
+  "runtime": {
+    "automation_enabled": false,
+    "preferred_hand": "AUTO",
+    "multi_hand_enabled": true
+  },
+  "mappings": {
+    "PINCH": {
+      "enabled": true,
+      "action": "LEFT_CLICK",
+      "mode": "ON_ENTER",
+      "cooldown_ms": 500
+    },
+    "OK": {
+      "enabled": true,
+      "action": "RIGHT_CLICK",
+      "mode": "ON_ENTER",
+      "cooldown_ms": 700
+    },
+    "ONE": {
+      "enabled": true,
+      "action": "MOUSE_MOVE",
+      "mode": "WHILE_ACTIVE",
+      "cooldown_ms": 0
+    },
+    "TWO": {
+      "enabled": true,
+      "action": "SCROLL",
+      "mode": "WHILE_ACTIVE",
+      "cooldown_ms": 40
+    },
+    "FIST": {
+      "enabled": true,
+      "action": "MEDIA_PLAY_PAUSE",
+      "mode": "ON_ENTER",
+      "cooldown_ms": 900
+    },
+    "THUMBS_UP": {
+      "enabled": true,
+      "action": "VOLUME_UP",
+      "mode": "ON_ENTER",
+      "cooldown_ms": 300
+    },
+    "THUMBS_DOWN": {
+      "enabled": true,
+      "action": "VOLUME_DOWN",
+      "mode": "ON_ENTER",
+      "cooldown_ms": 300
+    },
+    "OPEN_PALM": {
+      "enabled": false,
+      "action": "MEDIA_PLAY_PAUSE",
+      "mode": "ON_ENTER",
+      "cooldown_ms": 900
+    },
+    "THREE": {
+      "enabled": false,
+      "action": "MUTE",
+      "mode": "ON_ENTER",
+      "cooldown_ms": 700
+    },
+    "FOUR": {
+      "enabled": false,
+      "action": "HOTKEY",
+      "mode": "ON_ENTER",
+      "payload": {
+        "keys": [
+          "cmd",
+          "shift",
+          "h"
+        ]
+      },
+      "cooldown_ms": 900
+    }
+  },
+  "action_settings": {
+    "cursor_joint": 8,
+    "mapping_margin_x": 0.07,
+    "mapping_margin_y": 0.08,
+    "cursor_smoothing": 0.34,
+    "cursor_precision": 1.0,
+    "cursor_deadzone_px": 1.25,
+    "scroll_sensitivity": 150.0,
+    "scroll_threshold": 0.003,
+    "scroll_axis_lock": 0.72,
+    "scroll_tracking_smoothing": 0.5,
+    "scroll_motion_deadzone": 0.0018
+  }
+}
