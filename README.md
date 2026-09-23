@@ -2,6 +2,8 @@
 
 ###  Launch HandPilot
 
+ run:
+ 
 ```bash
 git clone https://github.com/tuktukiaansh-cyber/HandPilot-1.0.git
 cd HandPilot
@@ -10,6 +12,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 python main.py
 ```
+in terminal!!
 
 ```text
 ╭──────────────────────────────────────────╮
